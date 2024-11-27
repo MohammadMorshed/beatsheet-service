@@ -1,0 +1,465 @@
+{
+	"info": {
+		"_postman_id": "9049e92e-8662-438b-bf7e-f09546ba3acf",
+		"name": "Beat Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1324742"
+	},
+	"item": [
+		{
+			"name": "get beatsheets",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"My beatsheet test 001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{beat-svc-base}}/beatsheet",
+					"host": [
+						"{{beat-svc-base}}"
+					],
+					"path": [
+						"beatsheet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create beatsheet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"My beatsheet test 001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{beat-svc-base}}/beatsheet",
+					"host": [
+						"{{beat-svc-base}}"
+					],
+					"path": [
+						"beatsheet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get beatsheet",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"My beatsheet test 001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{beat-svc-base}}/beatsheet/10",
+					"host": [
+						"{{beat-svc-base}}"
+					],
+					"path": [
+						"beatsheet",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update beatsheet",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"My beatsheet test 010\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{beat-svc-base}}/beatsheet/10",
+					"host": [
+						"{{beat-svc-base}}"
+					],
+					"path": [
+						"beatsheet",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete beatsheet",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{beat-svc-base}}/beatsheet/10",
+					"host": [
+						"{{beat-svc-base}}"
+					],
+					"path": [
+						"beatsheet",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create beat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"Opening Scene\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{beat-svc-base}}/beatsheet/10/beat",
+					"host": [
+						"{{beat-svc-base}}"
+					],
+					"path": [
+						"beatsheet",
+						"10",
+						"beat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get beat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{beat-svc-base}}/beatsheet/10/beat/9",
+					"host": [
+						"{{beat-svc-base}}"
+					],
+					"path": [
+						"beatsheet",
+						"10",
+						"beat",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all beats",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"My beatsheet test 001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{beat-svc-base}}/beatsheet/10/beat",
+					"host": [
+						"{{beat-svc-base}}"
+					],
+					"path": [
+						"beatsheet",
+						"10",
+						"beat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update beat",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"Opening Scene modified\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{beat-svc-base}}/beatsheet/5/beat/1",
+					"host": [
+						"{{beat-svc-base}}"
+					],
+					"path": [
+						"beatsheet",
+						"5",
+						"beat",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete beat",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"Opening Scene modified\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{beat-svc-base}}/beatsheet/5/beat/1",
+					"host": [
+						"{{beat-svc-base}}"
+					],
+					"path": [
+						"beatsheet",
+						"5",
+						"beat",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create act",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"Hero meets mentor\",\n    \"duration\": 20,\n    \"camera_angle\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{beat-svc-base}}/beatsheet/10/beat/9/act",
+					"host": [
+						"{{beat-svc-base}}"
+					],
+					"path": [
+						"beatsheet",
+						"10",
+						"beat",
+						"9",
+						"act"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get act",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{beat-svc-base}}/beatsheet/10/beat/9/act/20",
+					"host": [
+						"{{beat-svc-base}}"
+					],
+					"path": [
+						"beatsheet",
+						"10",
+						"beat",
+						"9",
+						"act",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get acts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{beat-svc-base}}/beatsheet/5/beat/2/acts",
+					"host": [
+						"{{beat-svc-base}}"
+					],
+					"path": [
+						"beatsheet",
+						"5",
+						"beat",
+						"2",
+						"acts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update act",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"Hero meets mentor modified\",\n    \"duration\": 120,\n    \"camera_angle\": \"Close-up\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{beat-svc-base}}/beatsheet/10/beat/9/act/20",
+					"host": [
+						"{{beat-svc-base}}"
+					],
+					"path": [
+						"beatsheet",
+						"10",
+						"beat",
+						"9",
+						"act",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete act",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{beat-svc-base}}/beatsheet/5/beat/2/act/1",
+					"host": [
+						"{{beat-svc-base}}"
+					],
+					"path": [
+						"beatsheet",
+						"5",
+						"beat",
+						"2",
+						"act",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "suggest-next-act-sequences",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"current_act\":\"Climax\",\n    \"count\":8\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{beat-svc-base}}/beatsheet/10/beat/9/act/suggest",
+					"host": [
+						"{{beat-svc-base}}"
+					],
+					"path": [
+						"beatsheet",
+						"10",
+						"beat",
+						"9",
+						"act",
+						"suggest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "suggest-next-act",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"current_act\":\"Climax\",\n    \"count\":8\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{beat-svc-base}}/beatsheet/10/beat/9/act/suggest-next",
+					"host": [
+						"{{beat-svc-base}}"
+					],
+					"path": [
+						"beatsheet",
+						"10",
+						"beat",
+						"9",
+						"act",
+						"suggest-next"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
